@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Dreamfinity — Priyamvada Parmar | BA Portfolio</title>
-  <meta name="description" content="Dreamfinity Consulting — Priyamvada Parmar's one‑page portfolio showcasing Business Analysis projects, team initiatives, and contact details." />
+  <meta name="description" content="Dreamfinity Consulting — Priyamvada Parmar's one‑page portfolio showcasing Business Analysis projects, counselling services, and contact details." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -22,7 +22,7 @@
     .nav{position:sticky;top:0;backdrop-filter:saturate(180%) blur(8px);background:rgba(11,14,18,.7);z-index:50;border-bottom:1px solid #1e2530}
     .nav-inner{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:10px 28px}
     .logo{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.2px}
-    .logo .infinity{display:inline-block;width:20px;height:12px;border:2px solid var(--brand2);border-radius:50px 50px 50px 50px;position:relative}
+    .logo .infinity{display:inline-block;width:20px;height:12px;border:2px solid var(--brand2);border-radius:50px;position:relative}
     .logo .infinity:after{content:"";position:absolute;inset:-2px auto auto -2px;border:2px solid var(--brand);width:20px;height:12px;border-radius:50px}
     .nav a{color:#b7c2d7;font-weight:600;margin-left:16px}
     .btn{display:inline-flex;align-items:center;gap:10px;padding:12px 16px;border-radius:12px;border:1px solid #273142;background:linear-gradient(180deg,#1a2130,#121822);color:#eaf2ff;font-weight:600}
@@ -47,116 +47,69 @@
     .pill.active{border-color:var(--brand);box-shadow:0 0 0 2px rgba(124,58,237,.25) inset}
     .footer{padding:36px 0;color:#8ea2c9}
     .resume{display:flex;gap:12px;flex-wrap:wrap}
-    .hidden{display:none}
   </style>
 </head>
 <body>
   <header class="nav">
     <div class="nav-inner container">
-      <div class="logo" aria-label="Dreamfinity logo">
+      <div class="logo">
         <span>dream</span>
-        <span class="infinity" aria-hidden="true"></span>
+        <span class="infinity"></span>
         <span>finity</span>
       </div>
       <nav>
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
         <a href="#team">Team</a>
+        <a href="#counselling">Counselling</a>
         <a href="#contact">Contact</a>
-        <a class="btn" href="https://github.com/PriyamvadaParmar/ba-portfolio" target="_blank" rel="noreferrer">GitHub Portfolio ↗</a>
       </nav>
     </div>
   </header>
 
   <section class="hero container" id="about">
-    <span class="chip">Business Analyst • Digital Transformation • Loan Processing</span>
-    <h1 class="h1">Dreamfinity Consulting — One‑Page Portfolio</h1>
-    <p class="muted">Hi, I'm <strong>Priyamvada Parmar</strong>, a Business Analyst focused on process optimization and AI‑assisted delivery. This page showcases my <em>personal projects</em> and <em>team projects</em> (Aurora Bank — Loan Processing, Healthcare Claims Automation, E‑commerce Dashboard, more). Built to run free on GitHub Pages.</p>
+    <span class="chip">Business Analyst • Digital Transformation • Counsellor</span>
+    <h1 class="h1">Dreamfinity Consulting — Priyamvada Parmar</h1>
+    <p class="muted">Hi, I'm <strong>Priyamvada Parmar</strong> — Business Analyst & Founder of <strong>Dreamfinity Consulting</strong>. I design BA artifacts (BRDs, user stories, wireframes) and lead mock enterprise projects that feel real: Loan Processing (banking), Healthcare Claims, and E-commerce Dashboards. I also mentor career switchers into BA roles with hands-on portfolio building. Alongside, Dreamfinity Counselling provides structured <em>career and general life guidance</em> for individuals and families.</p>
     <div class="kpis">
-      <div class="kpi">✓ 10+ BA artifacts (BPMN, BRD, User Stories)</div>
-      <div class="kpi">✓ Mock enterprise projects</div>
-      <div class="kpi">✓ Open‑source friendly</div>
+      <div class="kpi">✓ BA Projects: Banking, Healthcare, E-commerce</div>
+      <div class="kpi">✓ Career & General Counselling Services</div>
+      <div class="kpi">✓ Remote-friendly Portfolio</div>
     </div>
   </section>
 
   <section class="container" id="projects">
     <h2>Projects</h2>
-    <p class="subtitle">Filter between personal and team work. Click any card for details.</p>
+    <p class="subtitle">Personal and Team projects showcasing BA skills.</p>
 
-    <div class="pill-nav" role="tablist" aria-label="Project filters">
-      <button class="pill active" data-filter="all">All</button>
-      <button class="pill" data-filter="personal">Personal</button>
-      <button class="pill" data-filter="team">Team</button>
-      <button class="pill" data-filter="ba">Business Analysis</button>
-      <button class="pill" data-filter="data">Dashboards</button>
-    </div>
-
-    <div class="grid cols-3" id="projectGrid">
-      <!-- Card 1 -->
-      <article class="card" data-tags="team ba loan">
+    <div class="grid cols-3">
+      <article class="card">
         <div class="cover"></div>
         <div class="body">
-          <h3>Aurora Bank — Loan Processing (End‑to‑End)</h3>
-          <p class="muted">Customer onboarding, digital loan application, document verification, status tracker. Includes epics, stories, wireframes, JSON contracts.</p>
-          <div>
-            <span class="tag">Team</span><span class="tag">BA</span><span class="tag">Banking</span>
-          </div>
-          <p><a href="#" data-open="aurora">View details</a> · <a target="_blank" href="https://github.com/PriyamvadaParmar/ba-portfolio">Repo</a></p>
+          <h3>Aurora Bank — Loan Processing</h3>
+          <p class="muted">Onboarding, profile update with audit trail, digital loan application (multi-step), validations, draft save, document uploads, and status tracker.</p>
+          <div><span class="tag">Team</span><span class="tag">BA</span></div>
+          <p><a target="_blank" href="https://github.com/PriyamvadaParmar/ba-portfolio/tree/main/banking-loan-processing">Repo</a></p>
         </div>
       </article>
 
-      <!-- Card 2 -->
-      <article class="card" data-tags="personal ba healthcare">
+      <article class="card">
         <div class="cover"></div>
         <div class="body">
           <h3>Healthcare Claims Automation</h3>
-          <p class="muted">Claims intake, rules, and BRD with RPA opportunities. Add BRD structure & KPIs.</p>
-          <div><span class="tag">Personal</span><span class="tag">BA</span><span class="tag">Healthcare</span></div>
-          <p><a href="#" data-open="healthcare">View details</a> · <a target="_blank" href="https://github.com/PriyamvadaParmar/ba-portfolio">Repo</a></p>
+          <p class="muted">Claims intake flow, BRD structure, rule matrix, API stubs, and automation opportunities.</p>
+          <div><span class="tag">Personal</span><span class="tag">BA</span></div>
+          <p><a target="_blank" href="https://github.com/PriyamvadaParmar/ba-portfolio/tree/main/healthcare-claims-automation">Repo</a></p>
         </div>
       </article>
 
-      <!-- Card 3 -->
-      <article class="card" data-tags="personal data ecommerce">
+      <article class="card">
         <div class="cover"></div>
         <div class="body">
-          <h3>E‑commerce Sales Dashboard</h3>
-          <p class="muted">KPI design, data model, mock CSVs, and dashboard walkthrough.</p>
+          <h3>E-commerce Sales Dashboard</h3>
+          <p class="muted">Metrics (Revenue, AOV, Conversion, RFM), sample dataset, and dashboard walkthrough.</p>
           <div><span class="tag">Personal</span><span class="tag">Data</span></div>
-          <p><a href="#" data-open="ecom">View details</a> · <a target="_blank" href="https://github.com/PriyamvadaParmar/ba-portfolio">Repo</a></p>
-        </div>
-      </article>
-
-      <!-- Card 4 -->
-      <article class="card" data-tags="team ba training">
-        <div class="cover"></div>
-        <div class="body">
-          <h3>BA Mentorship Sprint — Dreamfinity</h3>
-          <p class="muted">Facilitated sprints for a cohort of women BAs: backlog, DoR/DoD, reviews, and demos.</p>
-          <div><span class="tag">Team</span><span class="tag">Mentorship</span></div>
-          <p><a href="#" data-open="mentorship">View details</a></p>
-        </div>
-      </article>
-
-      <!-- Card 5 -->
-      <article class="card" data-tags="team ba banking">
-        <div class="cover"></div>
-        <div class="body">
-          <h3>WhatsApp Pay — Mini Feature Spec</h3>
-          <p class="muted">Lightweight PRD for UPI collect request and reminders.</p>
-          <div><span class="tag">Team</span><span class="tag">Fintech</span></div>
-          <p><a href="#" data-open="whatsapp">View details</a></p>
-        </div>
-      </article>
-
-      <!-- Card 6 -->
-      <article class="card" data-tags="personal writing">
-        <div class="cover"></div>
-        <div class="body">
-          <h3>Creative Writing — Books & Poems</h3>
-          <p class="muted">Selected chapters, synopses, and cover drafts for ongoing titles.</p>
-          <div><span class="tag">Personal</span><span class="tag">Writing</span></div>
-          <p><a href="#" data-open="writing">View details</a></p>
+          <p><a target="_blank" href="https://github.com/PriyamvadaParmar/ba-portfolio/tree/main/ecommerce-dashboard">Repo</a></p>
         </div>
       </article>
     </div>
@@ -164,78 +117,66 @@
 
   <section class="container" id="team">
     <h2>Dreamfinity Team Projects</h2>
-    <p class="subtitle">Rashi (Lead BA), Hema (Associate BA), Pinky (Comms), Anjana (Stakeholder), Priya (Coach).</p>
+    <p class="subtitle">Rashi (Lead BA), Hema (Associate BA), Pinky (Communications), Anjana (Stakeholder), Priya (Coach).</p>
     <div class="grid cols-2">
-      <div class="card"><div class="cover"></div><div class="body"><h3>Aurora Bank — Sprint Plan</h3><p class="muted">Epics & stories to close by 30 Sept. Includes wireframes and API contracts.</p><div class="tag">JIRA</div> <div class="tag">Confluence</div></div></div>
-      <div class="card"><div class="cover"></div><div class="body"><h3>Healthcare BRD — Collaboration</h3><p class="muted">Team review checklist, risks, assumptions, and sign‑off model.</p><div class="tag">BRD</div> <div class="tag">Reviews</div></div></div>
+      <div class="card"><div class="cover"></div><div class="body"><h3>Aurora Bank — Sprint Plan</h3><p class="muted">Epics & stories to close by 30 Sept. Includes wireframes and API contracts.</p></div></div>
+      <div class="card"><div class="cover"></div><div class="body"><h3>Healthcare BRD — Collaboration</h3><p class="muted">Team review checklist, risks, assumptions, and sign‑off model.</p></div></div>
+    </div>
+  </section>
+
+  <section class="container" id="counselling">
+    <h2>Dreamfinity Counselling</h2>
+    <p class="subtitle">Professional guidance for careers and life decisions — online & in‑person (Ujjain/Indore).</p>
+    <div class="grid cols-2">
+      <article class="card">
+        <div class="cover"></div>
+        <div class="body">
+          <h3>Career Counselling & BA Mentorship</h3>
+          <p class="muted">Resume revamp, LinkedIn branding, portfolio projects, mock interviews, job search strategy, and accountability plans.</p>
+          <ul style="margin:10px 0 14px; padding-left:18px; color:#a9b6cd">
+            <li>Skill-gap plan + weekly goals</li>
+            <li>Portfolio projects (Loan Processing, Healthcare BRD, Dashboards)</li>
+            <li>ATS resume + LinkedIn narrative</li>
+            <li>Mock interviews + case prep</li>
+          </ul>
+          <p><a class="btn" href="mailto:Priyamvadaparmar@gmail.com?subject=Career%20Counselling%20Inquiry">Book a free intro call</a></p>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="cover"></div>
+        <div class="body">
+          <h3>General Counselling & Well‑Being</h3>
+          <p class="muted">Supportive sessions for stress, life transitions, work–life balance, and habit building.</p>
+          <ul style="margin:10px 0 14px; padding-left:18px; color:#a9b6cd">
+            <li>Stress & routine planning (15‑minute daily plan)</li>
+            <li>Minimalism & declutter coaching</li>
+            <li>Parenting planners & study schedules</li>
+            <li>Accountability check‑ins</li>
+          </ul>
+          <p><a class="btn" href="mailto:Priyamvadaparmar@gmail.com?subject=General%20Counselling%20Inquiry">Start with a quick chat</a></p>
+        </div>
+      </article>
     </div>
   </section>
 
   <section class="container" id="contact">
     <h2>Contact</h2>
-    <p class="subtitle">Open to remote BA roles, freelance documentation, and mentorship.</p>
+    <p class="subtitle">Open to remote BA roles, freelance documentation, and counselling sessions.</p>
     <div class="resume">
       <a class="btn" href="mailto:Priyamvadaparmar@gmail.com">Email Me</a>
-      <a class="btn" href="https://www.linkedin.com/in/priyamvada-parmar" target="_blank" rel="noreferrer">LinkedIn ↗</a>
-      <a class="btn" href="https://github.com/PriyamvadaParmar/ba-portfolio" target="_blank" rel="noreferrer">GitHub ↗</a>
-      <a class="btn" href="#" onclick="downloadResume()">Download Resume (PDF)</a>
+      <a class="btn" href="https://www.linkedin.com/in/priyamvada-parmar" target="_blank">LinkedIn ↗</a>
+      <a class="btn" href="https://github.com/PriyamvadaParmar/ba-portfolio" target="_blank">GitHub ↗</a>
+      <a class="btn" href="Priyamvada_Parmar_Resume.pdf" download>Download Resume (PDF)</a>
     </div>
   </section>
 
   <footer class="container footer">
-    <small>© <span id="yr"></span> Dreamfinity Consulting • Built with free hosting on GitHub Pages • Zero cost</small>
+    <small>© <span id="yr"></span> Dreamfinity Consulting • Built with GitHub Pages • Zero cost</small>
   </footer>
 
-  <!-- Simple modal for project details -->
-  <dialog id="modal" style="border:none;border-radius:16px;max-width:760px;width:92%;background:#0b0f16;color:#e6edf3;box-shadow:0 10px 50px rgba(0,0,0,.6);">
-    <div style="padding:18px 18px 0;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #1f2733;">
-      <strong id="modalTitle">Project</strong>
-      <button class="pill" onclick="closeModal()">Close</button>
-    </div>
-    <div id="modalBody" style="padding:18px;line-height:1.6;color:#b8c4da"></div>
-    <div style="padding:0 18px 18px"><a id="modalLink" class="btn" target="_blank" rel="noreferrer">Open Repository ↗</a></div>
-  </dialog>
-
   <script>
-    // Year
     document.getElementById('yr').textContent = new Date().getFullYear();
-
-    // Filter logic
-    const pills = document.querySelectorAll('.pill-nav .pill');
-    const cards = document.querySelectorAll('#projectGrid .card');
-    pills.forEach(p=>p.addEventListener('click',()=>{
-      pills.forEach(x=>x.classList.remove('active')); p.classList.add('active');
-      const f=p.dataset.filter; cards.forEach(c=>{ c.style.display = (f==='all'||c.dataset.tags.includes(f))? 'block':'none'; });
-    }));
-
-    // Modal content map
-    const details = {
-      aurora:{title:'Aurora Bank — Loan Processing', body:`• Customer onboarding, profile update with audit history.<br>• Digital loan application (multi‑step) + validations + draft save.<br>• Aadhaar/PAN verification mock + document uploads.<br>• Status tracker.`, link:'https://github.com/PriyamvadaParmar/ba-portfolio'},
-      healthcare:{title:'Healthcare Claims Automation', body:`• Claims intake flow, actor mapping, BRD outline.<br>• Rule matrix + non‑functional requirements.<br>• Opportunities for automation.` , link:'https://github.com/PriyamvadaParmar/ba-portfolio'},
-      ecom:{title:'E‑commerce Sales Dashboard', body:`• Metrics: Revenue, AOV, Conversion, RFM.<br>• Sample dataset + dashboard walkthrough.` , link:'https://github.com/PriyamvadaParmar/ba-portfolio'},
-      mentorship:{title:'BA Mentorship Sprint — Dreamfinity', body:`• Weekly sprints with DoR/DoD and demos.<br>• Team roles: Rashi, Hema, Pinky, Anjana, Priya.` , link:'#'},
-      whatsapp:{title:'WhatsApp Pay — Mini Feature Spec', body:`• UPI collect request, reminders, and edge cases.<br>• Sequence diagram + acceptance criteria.` , link:'#'},
-      writing:{title:'Creative Writing — Books & Poems', body:`• Serenades Under the Banyan Tree (romance).<br>• Whispers of Al‑Kuhl (psychological horror).` , link:'#'}
-    };
-
-    // Open modal
-    document.querySelectorAll('[data-open]')?.forEach(el=>{
-      el.addEventListener('click',e=>{e.preventDefault(); const key=el.dataset.open; const d=details[key]; if(!d)return; openModal(d.title,d.body,d.link);});
-    });
-    function openModal(title,body,link){
-      const m=document.getElementById('modal');
-      document.getElementById('modalTitle').textContent=title;
-      document.getElementById('modalBody').innerHTML=body;
-      const a=document.getElementById('modalLink'); a.href=link; a.style.display = link? 'inline-flex':'none';
-      m.showModal();
-    }
-    function closeModal(){document.getElementById('modal').close();}
-
-    // Dummy resume download (replace with real file later)
-    function downloadResume(){
-      const blob = new Blob([`Priyamvada Parmar — Resume\n\nAdd your latest resume PDF to this site and link it.`],{type:'text/plain'});
-      const url = URL.createObjectURL(blob); const a=document.createElement('a'); a.href=url; a.download='Priyamvada_Parmar_Resume.txt'; a.click(); URL.revokeObjectURL(url);
-    }
   </script>
 </body>
 </html>
