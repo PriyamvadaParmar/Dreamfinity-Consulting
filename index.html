@@ -4,22 +4,140 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Dreamfinity — Priyamvada Parmar | BA Portfolio</title>
-  <meta name="description" content="Dreamfinity Consulting — Priyamvada Parmar's one-page portfoli<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Dreamfinity — Priyamvada Parmar | BA Portfolio</title>
   <meta name="description" content="Dreamfinity Consulting — Priyamvada Parmar's one-page portfolio showcasing Business Analysis projects, counselling services, and contact details." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0b0e12;--card:#12161d;--muted:#7f8ca3;--text:#e6edf3;--brand:#7c3aed;--brand2:#22d3ee;--ring:#2a3342;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,sans-serif}
+    a{color:var(--brand2);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .container{max-width:1120px;margin:auto;padding:28px}
+    .nav{position:sticky;top:0;backdrop-filter:blur(8px);background:rgba(11,14,18,.7);z-index:50;border-bottom:1px solid #1e2530}
+    .nav-inner{display:flex;align-items:center;justify-content:space-between;padding:10px 28px}
+    .logo{font-weight:800}
+    .nav a{color:#b7c2d7;font-weight:600;margin-left:16px}
+    .btn{display:inline-flex;align-items:center;gap:10px;padding:12px 16px;border-radius:12px;border:1px solid #273142;background:#121822;color:#eaf2ff;font-weight:600}
+    .hero{padding:96px 28px 40px;border-bottom:1px solid #1e2530}
+    .h1{font-size:36px;line-height:1.1;margin:0 0 12px;font-weight:800}
+    .muted{color:var(--muted)}
+    .grid{display:grid;gap:18px}
+    @media(min-width:860px){.grid.cols-3{grid-template-columns:repeat(3,1fr)}.grid.cols-2{grid-template-columns:repeat(2,1fr)}}
+    .card{background:#12161d;border:1px solid #202938;border-radius:16px;overflow:hidden}
+    .card .body{padding:16px}
+    .tag{display:inline-block;border:1px solid #2a3342;border-radius:999px;padding:4px 10px;font-size:12px;color:#a9b6cd;margin-right:6px}
+    section{padding:48px 0;border-bottom:1px solid #1e2530}
+    h2{margin:0 0 12px;font-size:24px}
+    .subtitle{margin:0 0 24px;color:#a0aec0}
+    .footer{padding:36px 0;color:#8ea2c9}
+    .resume{display:flex;gap:12px;flex-wrap:wrap}
+  </style>
 </head>
 <body>
-  <h1>Dreamfinity Consulting — Priyamvada Parmar</h1>
-  <p>This is your one-page portfolio website. Upload this file as index.html to your GitHub repo.</p>
-</body>
-</html>o showcasing Business Analysis projects, counselling services, and contact details." />
-</head>
-<body>
-  <h1>Dreamfinity Consulting — Priyamvada Parmar</h1>
-  <p>This is your one-page portfolio website. Upload this file as index.html to your GitHub repo.</p>
+  <header class="nav">
+    <div class="nav-inner container">
+      <div class="logo">dream∞finity</div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#team">Team</a>
+        <a href="#counselling">Counselling</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero container" id="about">
+    <h1 class="h1">Dreamfinity Consulting — Priyamvada Parmar</h1>
+    <p class="muted">Hi, I'm <strong>Priyamvada Parmar</strong> — Business Analyst & Founder of <strong>Dreamfinity Consulting</strong>. 
+    I design BA artifacts (BRDs, user stories, wireframes) and lead mock enterprise projects that feel real: Loan Processing (banking), Healthcare Claims, and E-commerce Dashboards. 
+    I also mentor career switchers into BA roles with hands-on portfolio building. Alongside, Dreamfinity Counselling provides structured career and general life guidance for individuals and families.</p>
+  </section>
+
+  <section class="container" id="projects">
+    <h2>Projects</h2>
+    <p class="subtitle">Personal and Team projects showcasing BA skills.</p>
+    <div class="grid cols-3">
+      <article class="card"><div class="body">
+        <h3>Aurora Bank — Loan Processing</h3>
+        <p class="muted">Onboarding, profile update with audit trail, digital loan application, validations, draft save, document uploads, and status tracker.</p>
+        <div><span class="tag">Team</span><span class="tag">BA</span></div>
+        <p><a target="_blank" href="https://github.com/PriyamvadaParmar/ba-portfolio/tree/main/banking-loan-processing">Repo</a></p>
+      </div></article>
+      <article class="card"><div class="body">
+        <h3>Healthcare Claims Automation</h3>
+        <p class="muted">Claims intake flow, BRD structure, rule matrix, API stubs, and automation opportunities.</p>
+        <div><span class="tag">Personal</span><span class="tag">BA</span></div>
+        <p><a target="_blank" href="https://github.com/PriyamvadaParmar/ba-portfolio/tree/main/healthcare-claims-automation">Repo</a></p>
+      </div></article>
+      <article class="card"><div class="body">
+        <h3>E-commerce Sales Dashboard</h3>
+        <p class="muted">Metrics (Revenue, AOV, Conversion, RFM), sample dataset, and dashboard walkthrough.</p>
+        <div><span class="tag">Personal</span><span class="tag">Data</span></div>
+        <p><a target="_blank" href="https://github.com/PriyamvadaParmar/ba-portfolio/tree/main/ecommerce-dashboard">Repo</a></p>
+      </div></article>
+    </div>
+  </section>
+
+  <section class="container" id="team">
+    <h2>Dreamfinity Team Projects</h2>
+    <p class="subtitle">Rashi (Lead BA), Hema (Associate BA), Pinky (Communications), Anjana (Stakeholder), Priya (Coach).</p>
+    <div class="grid cols-2">
+      <div class="card"><div class="body"><h3>Aurora Bank — Sprint Plan</h3><p class="muted">Epics & stories to close by 30 Sept. Includes wireframes and API contracts.</p></div></div>
+      <div class="card"><div class="body"><h3>Healthcare BRD — Collaboration</h3><p class="muted">Team review checklist, risks, assumptions, and sign-off model.</p></div></div>
+    </div>
+  </section>
+
+  <section class="container" id="counselling">
+    <h2>Dreamfinity Counselling</h2>
+    <p class="subtitle">Professional guidance for careers and life decisions — online & in-person (Ujjain/Indore).</p>
+    <div class="grid cols-2">
+      <article class="card"><div class="body">
+        <h3>Career Counselling & BA Mentorship</h3>
+        <p class="muted">Resume revamp, LinkedIn branding, portfolio projects, mock interviews, job search strategy, and accountability plans.</p>
+        <ul>
+          <li>Skill-gap plan + weekly goals</li>
+          <li>Portfolio projects (Loan Processing, Healthcare BRD, Dashboards)</li>
+          <li>ATS resume + LinkedIn narrative</li>
+          <li>Mock interviews + case prep</li>
+        </ul>
+        <p><a class="btn" href="mailto:Priyamvadaparmar@gmail.com?subject=Career%20Counselling%20Inquiry">Book a free intro call</a></p>
+      </div></article>
+      <article class="card"><div class="body">
+        <h3>General Counselling & Well-Being</h3>
+        <p class="muted">Supportive sessions for stress, life transitions, work–life balance, and habit building.</p>
+        <ul>
+          <li>Stress & routine planning (15-minute daily plan)</li>
+          <li>Minimalism & declutter coaching</li>
+          <li>Parenting planners & study schedules</li>
+          <li>Accountability check-ins</li>
+        </ul>
+        <p><a class="btn" href="mailto:Priyamvadaparmar@gmail.com?subject=General%20Counselling%20Inquiry">Start with a quick chat</a></p>
+      </div></article>
+    </div>
+  </section>
+
+  <section class="container" id="contact">
+    <h2>Contact</h2>
+    <p class="subtitle">Open to remote BA roles, freelance documentation, and counselling sessions.</p>
+    <div class="resume">
+      <a class="btn" href="mailto:Priyamvadaparmar@gmail.com">Email Me</a>
+      <a class="btn" href="https://www.linkedin.com/in/priyamvada-parmar" target="_blank">LinkedIn ↗</a>
+      <a class="btn" href="https://github.com/PriyamvadaParmar/ba-portfolio" target="_blank">GitHub ↗</a>
+      <a class="btn" href="Priyamvada_Parmar_Resume.pdf" download>Download Resume (PDF)</a>
+    </div>
+  </section>
+
+  <footer class="container footer">
+    <small>© <span id="yr"></span> Dreamfinity Consulting • Built with GitHub Pages • Zero cost</small>
+  </footer>
+
+  <script>
+    document.getElementById('yr').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
